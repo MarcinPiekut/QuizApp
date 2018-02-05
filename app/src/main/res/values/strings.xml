@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="question_1">Question 1</string>
+    <string name="question_2">Question 2</string>
+    <string name="question_3">Question 3</string>
+    <string name="question_4">Question 4</string>
+    <string name="question_5">Question 5</string>
+
+    //When button is cliked then Toast show score result
+    <string name="submit_answer">Quiz Answer</string>
+
+    //Content for all questions and answers
+    <string name="content_question_1">In which year Columbus discovered America?</string>
+    <string name="answer1_for_q1">1492</string>
+    <string name="answer2_for_q1">1482</string>
+    <string name="content_question_2">Which body parts you will find in a man?</string>
+    <string name="answer1_for_q2">Legs</string>
+    <string name="answer2_for_q2">Hoof</string>
+    <string name="answer3_for_q2">Tail</string>
+    <string name="answer4_for_q2">Nose</string>
+    <string name="content_question_3">What is the time of day if the sun shines?</string>
+    <string name="answer1_for_q3">Day</string>
+    <string name="answer2_for_q3">Night</string>
+    <string name="content_question_4">Which of the animals below is a reptile?</string>
+    <string name="answer1_for_q4">Mouse</string>
+    <string name="answer2_for_q4">Crocodile</string>
+    <string name="content_question_5">How many moons does the Earth have?</string>
+    <string name="write_answer">Here write answer</string>
+
+</resources>
