@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-
 import static com.example.andro.quizapp.R.id.write_answer;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,52 +31,47 @@ public class MainActivity extends AppCompatActivity {
                 int score = 0;
                 //Good answer for question 1
                 if (((RadioButton) findViewById(R.id.radio_button)).isChecked()) {
-                    score += 1;
+                    score++;
                 }
                 //Good answer for question 2
-                if (((CheckBox) findViewById(R.id.check_box1)).isChecked()) {
-                    score += 1;
-                }
-                if (((CheckBox) findViewById(R.id.check_box4)).isChecked()) {
-                    score += 1;
+                if (((CheckBox) findViewById(R.id.checkBoxTwoA)).isChecked() &&
+                        !(((CheckBox) findViewById(R.id.checkBoxTwoB)).isChecked())) ;
+                {
+                    score++;
                 }
                 //Good answer for question 3
-                if (((CheckBox) findViewById(R.id.check_box6)).isChecked()) {
-                    score += 1;
+                if (((RadioButton) findViewById(R.id.radio_button3)).isChecked()) {
+                    score++;
                 }
                 //Good answer for question 4
-                if (((RadioButton) findViewById(R.id.radio_button3)).isChecked()) {
-                    score += 1;
+                if (((RadioButton) findViewById(R.id.radio_button6)).isChecked()) {
+                    score++;
                 }
                 //Good answer for question 5
                 EditText inputTxt = findViewById(write_answer);
                 String name;
                 name = inputTxt.getText().toString();
                 if (name.equals("1")) {
-                    score += 1;
+                    score++;
+                } else {
+                    Toast.makeText(getApplicationContext(), "5 answer is incorrect", Toast.LENGTH_SHORT).show();
+
                 }
                 //Display score in Toast message
                 displayResult(score);
+
             }
 
         });
     }
     //defining what is to be shown in Toast message
-    private void displayResult(int score) {
+
+    public void displayResult(int score) {
         String message = "You scored " + score;
-        message += " of 6";
+        message += " out of 5";
+        message += "\nWell done!";
         Toast toast = Toast.makeText(this, message, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
     }
 }
-
-
-
-
-
-
-
-
-
-

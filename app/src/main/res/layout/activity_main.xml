@@ -19,7 +19,6 @@
         android:paddingTop="16dp"
         tools:context="com.example.android.justjava.MainActivity">
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +50,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/answer2_for_q1" />
-
         </RadioGroup>
 
         <TextView
@@ -70,25 +68,25 @@
             android:text="@string/content_question_2" />
 
         <CheckBox
-            android:id="@+id/check_box1"
+            android:id="@+id/checkBoxTwoA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/answer1_for_q2" />
 
         <CheckBox
-            android:id="@+id/check_box2"
+            android:id="@+id/checkBoxTwoB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/answer2_for_q2" />
 
         <CheckBox
-            android:id="@+id/check_box3"
+            android:id="@+id/checkBoxTwoC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/answer3_for_q2" />
 
         <CheckBox
-            android:id="@+id/check_box4"
+            android:id="@+id/checkBoxTwoD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/answer4_for_q2" />
@@ -127,6 +125,7 @@
 
         </RadioGroup>
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -142,18 +141,25 @@
             android:layout_height="wrap_content"
             android:text="@string/content_question_4" />
 
-        <CheckBox
-            android:id="@+id/check_box5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/answer1_for_q4" />
+        <RadioGroup
+            android:id="@+id/rg_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
-        <CheckBox
-            android:id="@+id/check_box6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/answer2_for_q4" />
 
+            <RadioButton
+                android:id="@+id/radio_button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/answer1_for_q4" />
+
+            <RadioButton
+                android:id="@+id/radio_button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/answer2_for_q4" />
+
+        </RadioGroup>
 
         <TextView
             android:layout_width="wrap_content"

@@ -27,4 +27,8 @@
     <string name="content_question_5">How many moons does the Earth have?</string>
     <string name="write_answer">Here write answer</string>
 
+    //Toast messeage
+   // <string name="score_toast">You scored</string>
+   // <string name="of_6">  of 6</string>
+
 </resources>
