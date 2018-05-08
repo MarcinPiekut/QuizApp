@@ -33,13 +33,15 @@ public class MainActivity extends AppCompatActivity {
                 if (((RadioButton) findViewById(R.id.radio_button)).isChecked()) {
                     score++;
                 }
-                //Good answer for question 2
+                //Logic for answer question 2
                 if (((CheckBox) findViewById(R.id.checkBoxTwoA)).isChecked() &&
-                        !(((CheckBox) findViewById(R.id.checkBoxTwoB)).isChecked())) ;
+                        ((CheckBox) findViewById(R.id.checkBoxTwoD)).isChecked() &&
+                        !((CheckBox) findViewById(R.id.checkBoxTwoB)).isChecked() &&
+                        !((CheckBox) findViewById(R.id.checkBoxTwoC)).isChecked())
                 {
                     score++;
                 }
-                //Good answer for question 3
+                // Good answer for question 3
                 if (((RadioButton) findViewById(R.id.radio_button3)).isChecked()) {
                     score++;
                 }
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 name = inputTxt.getText().toString();
                 if (name.equals("1")) {
                     score++;
+                    Toast.makeText(getApplicationContext(),"5 answer is correct", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(), "5 answer is incorrect", Toast.LENGTH_SHORT).show();
 
@@ -64,7 +67,10 @@ public class MainActivity extends AppCompatActivity {
 
         });
     }
-    //defining what is to be shown in Toast message
+
+    /**
+     * defining what is to be shown in Toast message
+     */
 
     public void displayResult(int score) {
         String message = "You scored " + score;
